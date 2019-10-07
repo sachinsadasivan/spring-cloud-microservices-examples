@@ -14,8 +14,8 @@ public class ProductInfoResource {
 
     @RequestMapping("/products/{productId}")
     public ProductInfo getProductInfo(@PathVariable("productId") String productId){
-        Optional<ProductPaymentInfo> productPaymentInfo = getProductInfoList().stream().filter(paymentInfo -> paymentInfo.getProductId().equals(productId)).findFirst();
-        return productPaymentInfo.orElse(new ProductInfo(productId, "No Product", "None"));
+        Optional<ProductInfo> productInfo = getProductInfoList().stream().filter(product -> product.getProductId().equals(productId)).findFirst();
+        return productInfo.orElse(new ProductInfo(productId, "No Product", "None"));
     }
 
     public List<ProductInfo> getProductInfoList(){
