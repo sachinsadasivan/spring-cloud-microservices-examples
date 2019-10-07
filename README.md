@@ -1,6 +1,6 @@
 # Spring Cloud Microservices Examples
 
-This is an example Product Catalog Service Application based on Microservice Architecture. This application uses Spring Cloud
+This is an example Product Catalog Service Application based on Microservice Architecture. This Application is based in Service Discovery and Load Balancing
 
 ## Product Catalog Service
 
