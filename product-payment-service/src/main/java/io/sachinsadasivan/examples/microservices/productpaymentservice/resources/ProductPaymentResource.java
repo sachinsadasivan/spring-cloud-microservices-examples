@@ -14,13 +14,8 @@ public class ProductPaymentResource {
 
     @RequestMapping("/paymentinfo/{productId}")
     public ProductPaymentInfo getProductPaymentInfo(@PathVariable("productId") String productId){
-
-        for(ProductPaymentInfo productPaymentInfo : getProductPaymentInfoList()){
-            if(productPaymentInfo.getProductId().equals(productId)){
-                return productPaymentInfo;
-            }
-        }
-        return new ProductPaymentInfo(productId, "None", 0.0);
+        Optional<ProductPaymentInfo> productPaymentInfo = getProductPaymentInfoList().stream().filter(paymentInfo -> paymentInfo.getProductId().equals(productId)).findFirst();
+        return productPaymentInfo.orElse(new ProductPaymentInfo(productId, "None", 0.0));
     }
 
     private List<ProductPaymentInfo> getProductPaymentInfoList(){
