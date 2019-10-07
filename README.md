@@ -19,5 +19,10 @@ Product Payment Service is a Spring Boot Microservice which prvides Product Paym
 
 Discovery Service is a Spring Boot Discovery Microservice. It enables the Service Discovery for the registerd clients.
 
+## Technologies
+Project is created with:
+* Spring Boot
+* Spring Cloud
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
