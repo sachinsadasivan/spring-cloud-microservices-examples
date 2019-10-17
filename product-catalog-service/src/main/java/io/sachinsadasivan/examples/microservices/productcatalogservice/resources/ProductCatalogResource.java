@@ -1,6 +1,7 @@
 package io.sachinsadasivan.examples.microservices.productcatalogservice.resources;
 
 import io.sachinsadasivan.examples.microservices.productcatalogservice.model.ProductCatalog;
+
 import io.sachinsadasivan.examples.microservices.productcatalogservice.model.ProductInfo;
 import io.sachinsadasivan.examples.microservices.productcatalogservice.model.ProductPaymentInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,9 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/product-catalog")
 public class ProductCatalogResource {
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @RequestMapping("{productId}")
     public ProductCatalog getProductCatalog(@PathVariable("productId") String productId){
