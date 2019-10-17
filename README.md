@@ -41,6 +41,31 @@ You can build a tagged docker image using the command line like this:
 $ ./mvnw install dockerfile:build
 ```
 
+### Run a Containarized Docker Microservice Image
+
+####Execute the command:
+
+#####Syntax
+```
+docker run  <tag>/<microservice-name>
+```
+#####Example:
+```
+docker run  sachinsadasivan/product-catalog-service
+```
+
+####If you want to specify the port
+
+#####Syntax
+```
+docker run -p <port>:<port> <tag>/<microservice-name>
+```
+
+#####Example:
+```
+docker run -p 8080:8080 sachinsadasivan/product-catalog-service
+```
+
 ## Technologies
 Project is created with:
 * Spring Boot
