@@ -5,4 +5,4 @@ ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /product-catalog-service/lib
 COPY ${DEPENDENCY}/META-INF /product-catalog-service/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /product-catalog-service
-ENTRYPOINT ["java","-cp","product-catalog-service:product-catalog-service/lib/*","io.sachinsadasivan.microservices.examples.productcatalogservice.ProductCatalogServiceApplication"]
+ENTRYPOINT ["java","-cp","product-catalog-service:product-catalog-service/lib/*","io.sachinsadasivan.examples.microservices.productcatalogservice.ProductCatalogServiceApplication"]
