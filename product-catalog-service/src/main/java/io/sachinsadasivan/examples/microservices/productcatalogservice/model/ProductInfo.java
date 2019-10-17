@@ -1,7 +1,5 @@
 package io.sachinsadasivan.examples.microservices.productcatalogservice.model;
 
-import io.sachinsadasivan.examples.microservices.productinfoservice.model.ProductPaymentInfo;
-
 public class ProductInfo {
 
     private String productId;
