@@ -1,4 +1,4 @@
-package io.sachinsadasivan.examples.microservices.productinfoservice.model;
+package io.sachinsadasivan.examples.microservices.productcatalogservice.model;
 
 public class ProductPaymentInfo {
 
