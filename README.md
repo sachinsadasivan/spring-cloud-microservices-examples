@@ -40,6 +40,11 @@ docker build -t sachinsadasivan/product-catalog-service:latest .
 ### Build Microservice Image
 You can build a tagged docker image using the command line like this:
 ```
+$ mvn install dockerfile:build
+```
+If you do not have maven installed, use the below command
+
+```
 $ ./mvnw install dockerfile:build
 ```
 
