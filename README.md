@@ -25,6 +25,8 @@ Discovery Service is a Spring Boot Discovery Microservice. It enables the Servic
 
 ### Tag a Microservice
 You can tag a Microservice by executing below Docker command
+
+Syntax:
 ```
 docker build -t <tag>/<microservice-name>:latest .
 ```
@@ -43,25 +45,25 @@ $ ./mvnw install dockerfile:build
 
 ### Run a Containarized Docker Microservice Image
 
-####Execute the command:
+Execute the command:
 
-#####Syntax
+Syntax:
 ```
 docker run  <tag>/<microservice-name>
 ```
-#####Example:
+Example:
 ```
 docker run  sachinsadasivan/product-catalog-service
 ```
 
-####If you want to specify the port
+If you want to specify the port
 
-#####Syntax
+Syntax
 ```
 docker run -p <port>:<port> <tag>/<microservice-name>
 ```
 
-#####Example:
+Example:
 ```
 docker run -p 8080:8080 sachinsadasivan/product-catalog-service
 ```
