@@ -1,15 +1,17 @@
 package io.sachinsadasivan.examples.microservices.productcatalogservice.model;
 
+import io.sachinsadasivan.examples.microservices.productinfoservice.model.ProductPaymentInfo;
+
 public class ProductCatalog {
 
     private String productId;
-    private String productInfo;
-    private String productPaymentInfo;
+    private ProductInfo productInfo;
+    private ProductPaymentInfo productPaymentInfo;
 
     public ProductCatalog() {
     }
 
-    public ProductCatalog(String productId, String productInfo, String productPaymentInfo) {
+    public ProductCatalog(String productId, ProductInfo productInfo, ProductPaymentInfo productPaymentInfo) {
         this.productId = productId;
         this.productInfo = productInfo;
         this.productPaymentInfo = productPaymentInfo;
@@ -23,19 +25,19 @@ public class ProductCatalog {
         this.productId = productId;
     }
 
-    public String getProductInfo() {
+    public ProductInfo getProductInfo() {
         return productInfo;
     }
 
-    public void setProductInfo(String productInfo) {
+    public void setProductInfo(ProductInfo productInfo) {
         this.productInfo = productInfo;
     }
 
-    public String getProductPaymentInfo() {
+    public ProductPaymentInfo getProductPaymentInfo() {
         return productPaymentInfo;
     }
 
-    public void setProductPaymentInfo(String productPaymentInfo) {
+    public void setProductPaymentInfo(ProductPaymentInfo productPaymentInfo) {
         this.productPaymentInfo = productPaymentInfo;
     }
 }
