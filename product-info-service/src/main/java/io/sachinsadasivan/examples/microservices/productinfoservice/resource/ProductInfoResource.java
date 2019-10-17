@@ -13,7 +13,7 @@ import java.util.Optional;
 @RequestMapping("/product-info")
 public class ProductInfoResource {
 
-    @RequestMapping("/products/{productId}")
+    @RequestMapping("{productId}")
     public ProductInfo getProductInfo(@PathVariable("productId") String productId){
         Optional<ProductInfo> productInfo = getProductInfoList().stream().filter(product -> product.getProductId().equals(productId)).findFirst();
         return productInfo.orElse(new ProductInfo(productId, "No Product", "None"));
