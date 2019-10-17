@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/product-catalog")
 public class ProductCatalogResource {
 
-    @RequestMapping("/products/{productId}")
+    @RequestMapping("{productId}")
     public ProductCatalog getProductCatalog(@PathVariable("productId") String productId){
         
         ProductInfo productInfo =  restTemplate.getForObject("http://product-info-service/product-info/" + productId, ProductInfo.class);
