@@ -2,8 +2,9 @@ package io.sachinsadasivan.examples.microservices.productcatalogservice.resource
 
 import io.sachinsadasivan.examples.microservices.productcatalogservice.model.ProductCatalog;
 
+
 import io.sachinsadasivan.examples.microservices.productcatalogservice.model.ProductInfo;
-import io.sachinsadasivan.examples.microservices.productcatalogservice.model.ProductPaymentInfo;
+import io.sachinsadasivan.examples.microservices.productinfoservice.model.ProductPaymentInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
