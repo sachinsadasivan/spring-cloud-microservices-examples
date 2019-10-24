@@ -1,11 +1,10 @@
 package io.sachinsadasivan.microservices.examples.productcatalogservice;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
 @SpringBootTest
-public class ProductDiscoveryServerApplicationTests {
+class ProductDiscoveryServerApplicationTests {
 
 	@Test
 	public void contextLoads() {
