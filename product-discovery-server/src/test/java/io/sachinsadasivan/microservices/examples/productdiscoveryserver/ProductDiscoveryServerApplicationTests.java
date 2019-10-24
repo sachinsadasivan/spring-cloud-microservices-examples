@@ -1,14 +1,14 @@
 package io.sachinsadasivan.microservices.examples.productdiscoveryserver;
 
 import org.junit.Test;
-
 import org.springframework.boot.test.context.SpringBootTest;
 
+
 @SpringBootTest
-class ProductDiscoveryServerApplicationTests {
+public class ProductDiscoveryServerApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }
