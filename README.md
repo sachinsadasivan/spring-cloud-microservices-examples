@@ -1,6 +1,6 @@
 # Spring Cloud Microservices Examples
 
-This is an example Product Catalog Service Application based on Microservice Architecture. This Application is based on Service Discovery and Load Balancing.
+This is an example Imaginary E-commerce Product Catalog Service Application based on Microservice Architecture. This Application is based on Service Discovery and Load Balancing.
 
 These Microservices can be containerized easily. The Dockerfile is part of each Microservices.
 
