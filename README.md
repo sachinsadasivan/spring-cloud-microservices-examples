@@ -17,9 +17,9 @@ Product Info Service is a Spring Boot Microservice which prvides Product Informa
 
 Product Payment Service is a Spring Boot Microservice which prvides Product Payment using productId. It provides a REST API to recive productId and then return the corresponding Product Payment Information.
 
-## Discovery Service
+## Product Discovery Server
 
-Discovery Service is a Spring Boot Discovery Microservice. It enables the Service Discovery for the registerd clients.
+Product Discovery Server is a Netflix Eureka Discovery Microservice. It enables the Service Discovery for the registerd clients.
 
 ## Containerizing Microservices
 
