@@ -74,7 +74,7 @@ docker run -p 8080:8080 sachinsadasivan/product-catalog-service
 ```
 
 ## Technologies
-Project is created with:
+Projects are created with:
 * Spring Boot
 * Spring Cloud
 * Docker
