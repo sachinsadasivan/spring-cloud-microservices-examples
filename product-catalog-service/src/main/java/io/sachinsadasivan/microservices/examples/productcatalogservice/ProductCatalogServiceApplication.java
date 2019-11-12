@@ -18,6 +18,12 @@ public class ProductCatalogServiceApplication {
 	@LoadBalanced
 	@Bean
 	public RestTemplate getRestTemplate(){
+		
+		// Fault Tolerance with Time Out
+		// HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory();
+		// clientHttpRequestFactory.setConnectionRequestTimeout(3000);
+		// return new RestTemplate(clientHttpRequestFactory);
+		
 		return new RestTemplate();
 	}
 }
