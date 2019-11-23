@@ -77,10 +77,6 @@ docker run -p 8080:8080 sachinsadasivan/product-catalog-service
 Projects are created with:
 * Spring Boot
 * Spring Cloud
-* Load Balancing
-* Service Discovery
-* Fault Tolarence
-* Circuit Breaker
 * Docker
 
 ## Contributing
